@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+}
+.wrapper{
+    border: 1px solid red;
+}
+.container{
+    border: 1px solid blue;
+    height: 5000px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 2px;
+}
+.header{
+    border: 1px solid green;
+    margin-top: 2vh;
+    background-color: #252222;
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    margin-bottom: 2vh;
+}
+.header p{
+    color: white;
+    font-weight: 700;
+    font-size: 4vh;
+    border: 1px solid red;
+    margin-top: 2vh;
+}
+.header img{
+    border: 1px solid red;
+    height: 6vh;
+    margin-top: 2vh;
+}
+.banks{
+    border: 3px solid #00000080;
+    border-radius: 30px;
+    width: 70%;
+    margin: auto;
+    background-color: #FCFCFC;
+}
+.unit{
+    border: 3px solid #00000080;
+    border-radius: 50px;
+    border-style: none none solid none;
+    height: 50px;
+    width: 100%;
+    display: flex;
+}
+.u_label{
+    width: 30%;
+    height: 100%;
+    border-radius: 50px;
+    background-color: #AC0000;
+    border: 1px solid black;
+    float: left;
+}
+.u_label p{
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-top: .4rem;
+}
+.u_name{
+    border: 1px solid red;
+    width: 40%;
+}
+.u_name p{
+    font-size: 25px;
+    margin-top: .4rem;
+    font-weight: 500;
+    padding-left: 5px;
+}
+.u_change{
+    border: 1px solid red;
+    width: 25%;
+}
+.u_change button{
+    float: right;
+    border: none;
+    background: none;
+    color: #AC0000;
+    font-size: 25px;
+    margin-top: .5rem;
+    cursor: pointer;
+}
+.choosebank{
+    width: 95%;
+    margin: auto;
+    border: 1px solid red;
+}
+.choosebank p{
+    border-bottom: 3px solid #AC0000;
+    width: 100%;
+    border-image: linear-gradient(to right, #AC0000 9%, transparent 9%) 100% 1;
+    margin-top: .5rem;
+    font-size: 20px;
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
+.choosebank img{
+    width: 15vw;
+    height: 8vw;
+}
+.bankchoice{
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.bankchoice label{
+    margin: 10px;
+}
+#topbank{
+    margin-bottom: 3rem;
+}
+.bankchoice input{
+    display: none;
+}
+
+#bank-1:checked ~ .bank-1,
+#bank-2:checked ~ .bank-2,
+#bank-3:checked ~ .bank-3,
+#bank-4:checked ~ .bank-4,
+#bank-5:checked ~ .bank-5,
+#bank-6:checked ~ .bank-6{
+    border: 2px solid #AC0000;
+    background-color: #AC0000;
+}
+.application_form{
+    border: 3px solid #00000080;
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    height: 1000px;
+    border-radius: 20px;
+    background-color: #FCFCFC;
+}
+.consent{
+    border: 2px solid #00000080;
+    border-style: none none solid none;
+    height: 240px;
+    text-align: center;
+}
+.consent h1{
+    color: #AC0000;
+    font-size: 30px;
+    margin-top: 15px;
+}
+.consent p{
+    width: 90%;
+    margin: auto;
+    font-size: 1rem;
+}
+.check{
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+}
+.checkbox-field{
+    opacity: 0;
+}
+.checkbox-label{
+    position: relative;
+    padding-left: 40px;
+    font-size: 1.2rem;
+    line-height: 1rem;
+    cursor: pointer;
+}
+.checkbox-label:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+.checkbox-label:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: #AC0000;
+    border: 2px solid black;
+}
+.checkbox-field:not(:checked) + .checkbox-label::after{
+    opacity: 0;
+}
+
+

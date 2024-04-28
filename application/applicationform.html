@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ordering/Application Form</title>
+        <link rel="stylesheet" href="application_style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <div class="header">
+                    <img src="images/icon_VA.svg"><p>VEHICLE APPLICATION</p>
+                </div>
+                <div class="banks">
+                    <div class="unit">
+                        <div class="u_label"><p>Unit/Vehicle:</p></div>
+                        <div class="u_name"><p>chosen vehicle</p></div>
+                        <div class="u_change"><button type="button" onclick="">Change</button></div>
+                    </div>
+                    <form>
+                    <div class="choosebank">
+                        <p>Choose Bank:</p>
+                        <div class="bankchoice">
+                            <input type="radio" name="bank" id="bank-1">
+                            <label class="bank bank-1" id="topbank" for='bank-1'><img src="images/bpi.svg"></label>
+                            <input type="radio" name="bank" id="bank-2">
+                            <label class="bank bank-2" id="topbank" for='bank-2'><img src="images/maybank.svg"></label>
+                            <input type="radio" name="bank" id="bank-3">
+                            <label class="bank bank-3" id="topbank" for='bank-3'><img src="images/rcbc.svg"></label>
+                            <input type="radio" name="bank" id="bank-4">
+                            <label class="bank bank-4" for='bank-4'><img src="images/securitybank.svg"></label>
+                            <input type="radio" name="bank" id="bank-5">
+                            <label class="bank bank-5" for='bank-5'><img src="images/psbank.svg"></label>
+                            <input type="radio" name="bank" id="bank-6">
+                            <label class="bank bank-6" for='bank-6'><img src="images/eastwest.svg"></label>
+                        </div>
+                        
+                    </form>
+                    </div>
+                </div>
+                <div class="application_form">
+                    <div class="consent">
+                        <h1>Application Form</h1>
+                        <p>I hereby authorize Union Motor Corporation (Authorized dealer of Mitsubishi Motors Philippines) 
+                            to process and share my personal data to any of it’s accredited banks for the purpose of financing 
+                            my purchase of auto vehicle from the dealer. I am also aware that the details of how my personal data 
+                            will be processed</p>
+                        <div class="check">
+                        <input type="checkbox" class="checkbox-field" id="agree">
+                        <label for="agree" class="checkbox-label">Agree</label>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
